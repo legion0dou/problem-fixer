@@ -1,0 +1,23 @@
+function calculateGrade() {
+  const userInput = prompt("Enter student's marks (0-100):");
+  
+  // Convert the user input to a number
+  const marks = parseFloat(userInput);
+
+  if (isNaN(marks) || marks < 0 || marks > 100) {
+    alert("Invalid input. Please enter a valid number between 0 and 100.");
+  } else if (marks >= 80) {
+    alert("Grade: A");
+  } else if (marks >= 60) {
+    alert("Grade: B");
+  } else if (marks >= 50) {
+    alert("Grade: C");
+  } else if (marks >= 40) {
+    alert("Grade: D");
+  } else {
+    alert("Grade: E");
+  }
+}
+
+// Call the function to calculate the grade
+calculateGrade();
